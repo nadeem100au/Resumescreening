@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Header } from "./Header";
 import { FileText, Layers, TrendingUp, CheckCircle2, MessageSquare } from "lucide-react";
 import { useState, useEffect, useRef, useCallback } from "react";
-import svgPaths from "../imports/svg-s788cbew26";
+import svgPaths from "../../imports/svg-s788cbew26";
 import imgAvatar from "figma:asset/cdac98998c90f96526373b774ef80741763f4a50.png";
 
 export function SlideSourcing() {

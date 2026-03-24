@@ -44,13 +44,13 @@ export default function App() {
   // Slide 5: Dark (Five)
   // Slide 6: Light (Sourcing)
   // Slide 7: Dark (HRAutomation)
-  // Slide 8: Dark (HRVoice)
-  // Slide 9: Light (Six)
-  // Slide 10: Dark (Seven)
+  // Slide 8: Light (Six)
+  // Slide 9: Dark (Seven)
+  // Slide 10: Dark (HRVoice)
   // Slide 11: Light (Eight)
   // Slide 12: Dark (Nine)
   // Slide 13: Light (Ten)
-  const whiteSlides = [2, 4, 6, 9, 11, 13];
+  const whiteSlides = [2, 4, 6, 8, 11, 13];
   const isWhiteTheme = whiteSlides.includes(currentSlide);
 
   useEffect(() => {
@@ -128,9 +128,9 @@ export default function App() {
     <SlideFive key="slide5" />,
     <SlideSourcing key="sourcing" />,
     <SlideHRAutomation key="hrautomation" />,
-    <SlideHRVoice key="hrvoice" />,
     <SlideSix key="slide6" />,
     <SlideSeven key="slide7" />,
+    <SlideHRVoice key="hrvoice" />,
     <SlideEight key="slide8" />,
     <SlideNine key="slide9" />,
     <SlideTen key="slide10" />
