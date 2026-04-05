@@ -34,7 +34,7 @@ export function SlideTwo() {
         >
           <p className="text-[#6D42D0] font-bold tracking-[0.2em] text-sm uppercase">Legacy System</p>
           <h2 className="text-[3.5rem] font-serif font-thin text-[#0B051A] leading-tight">
-            Oracle Recruit <span className="italic text-[#6D42D0]">Flaws</span>
+            Traditional ATS <span className="italic text-[#6D42D0]">Challenges</span>
           </h2>
           <p className="text-xl text-gray-500 font-light">
             Basic filtering fails to capture context, meaning top candidates are easily missed.
