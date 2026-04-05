@@ -10,7 +10,7 @@ export function SlideFive() {
       exit={{ opacity: 0 }}
       className="flex flex-col h-full w-full bg-[#0B051A] text-white"
     >
-      <Header title="EMERSON CASE STUDY" theme="dark" />
+      <Header title="CASE STUDY" theme="dark" />
 
       <main className="flex-1 flex items-center justify-center px-16 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-2 gap-16 items-center w-full">

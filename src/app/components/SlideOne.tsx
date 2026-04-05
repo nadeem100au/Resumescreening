@@ -11,7 +11,7 @@ export function SlideOne() {
       transition={{ duration: 0.8 }}
       className="flex flex-col h-full w-full bg-[#0B051A] text-white overflow-hidden relative"
     >
-      <Header title="EMERSON CASE STUDY" theme="dark" />
+      <Header title="CASE STUDY" theme="dark" />
 
       {/* Background Graphic */}
       <div className="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
@@ -34,7 +34,7 @@ export function SlideOne() {
               The <span className="italic text-[#8B61F6]">Volume</span><br />Challenge
             </h1>
             <p className="text-xl text-gray-400 font-light leading-relaxed max-w-lg">
-              Emerson receives <span className="text-white font-medium">20K–30K resumes per month</span>. Manual screening is incredibly slow and highly inconsistent.
+              Enterprises receive <span className="text-white font-medium">20K–30K resumes per month</span>. Manual screening is incredibly slow and highly inconsistent.
             </p>
           </motion.div>
 

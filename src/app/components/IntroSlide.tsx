@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Header } from "./Header";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export function IntroSlide() {
   return (
@@ -11,7 +11,7 @@ export function IntroSlide() {
       transition={{ duration: 0.8 }}
       className="flex flex-col h-full w-full bg-[#0B051A] text-white overflow-hidden relative"
     >
-      <Header title="EMERSON USE CASE" theme="dark" />
+      <Header title="CASE STUDY" theme="dark" />
 
       {/* Background Graphic */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -43,16 +43,6 @@ export function IntroSlide() {
       </div>
 
       <main className="flex-1 px-16 flex flex-col items-center justify-center max-w-7xl mx-auto w-full relative z-20 text-center">
-        <motion.div
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm"
-        >
-          <Sparkles className="w-4 h-4 text-[#8B61F6]" />
-          <span className="text-xs font-bold tracking-[0.2em] text-gray-300 uppercase">EMERSON USECASE</span>
-        </motion.div>
-
         <motion.h1
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -67,7 +57,7 @@ export function IntroSlide() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
           className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl mx-auto leading-relaxed mb-12"
-        >Tailored screening and evaluation workflows optimized specifically for Emerson.</motion.p>
+        >Tailored screening and evaluation workflows optimized specifically for enterprise hiring teams.</motion.p>
 
         <motion.div
           initial={{ opacity: 0 }}

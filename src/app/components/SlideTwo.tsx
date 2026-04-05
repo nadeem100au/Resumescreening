@@ -23,7 +23,7 @@ export function SlideTwo() {
       exit={{ opacity: 0 }}
       className="flex flex-col h-full w-full bg-[#FAFAFA] text-gray-900"
     >
-      <Header title="EMERSON CASE STUDY" theme="light" />
+      <Header title="CASE STUDY" theme="light" />
 
       <main className="flex-1 flex flex-col items-center justify-center px-12 pt-8 pb-16 relative">
         <motion.div
@@ -51,7 +51,7 @@ export function SlideTwo() {
             { 
               icon: <SearchX className="w-10 h-10 text-red-500" />,
               title: "Rigid Keyword Matching", 
-              desc: "Exact strings only. Fails to recognize 'Commerce' as 'BCom'."
+              desc: "Exact strings only. Fails to recognize 'Bachelor of Technology' as 'B.Tech'."
             },
             { 
               icon: <LayoutList className="w-10 h-10 text-amber-500" />,

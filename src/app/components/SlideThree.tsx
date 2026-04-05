@@ -10,7 +10,7 @@ export function SlideThree() {
       exit={{ opacity: 0 }}
       className="flex flex-col h-full w-full bg-[#0B051A] text-white"
     >
-      <Header title="EMERSON CASE STUDY" theme="dark" />
+      <Header title="CASE STUDY" theme="dark" />
 
       <main className="flex-1 flex flex-col justify-center px-16 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-12 gap-12 items-center">
@@ -29,7 +29,7 @@ export function SlideThree() {
             </div>
             
             <p className="text-xl text-gray-400 font-light leading-relaxed">
-              IIIP intuitively understands conversational queries. "BCom + finance ops" is instantly decoded without complex boolean strings.
+              IIIP intuitively understands conversational queries. "B.Tech + cloud infra" is instantly decoded without complex boolean strings.
             </p>
 
             <div className="space-y-4 pt-4 border-t border-white/10">
@@ -57,15 +57,15 @@ export function SlideThree() {
             <div className="relative z-10 space-y-6">
               <div className="bg-white/5 rounded-xl p-5 border border-white/10">
                 <p className="text-sm text-gray-400 mb-2 uppercase tracking-wider font-semibold">User criteria Query ( TEXT) </p>
-                <p className="text-2xl font-serif italic">"BCom + finance ops"</p>
+                <p className="text-2xl font-serif italic">"B.Tech + cloud infra"</p>
               </div>
 
               <div className="space-y-3">
                 <p className="text-sm text-[#8B61F6] font-semibold uppercase tracking-wider pl-2">IIIP Understanding</p>
                 {[
-                  "Bachelor of Commerce (or equivalent)",
-                  "Experience in Financial Operations",
-                  "Reconciliation & Ledger management inferred"
+                  "Bachelor of Technology (or equivalent)",
+                  "Experience in Cloud Infrastructure",
+                  "Terraform, AWS & CI/CD pipelines inferred"
                 ].map((item, i) => (
                   <motion.div 
                     key={i}

@@ -35,7 +35,7 @@ export function SlideHRAutomation() {
       exit={{ opacity: 0 }}
       className="flex flex-col h-full w-full bg-[#0B051A] text-white overflow-hidden relative"
     >
-      <Header title="EMERSON CASE STUDY" theme="dark" />
+      <Header title="CASE STUDY" theme="dark" />
 
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-full h-full pointer-events-none opacity-20"

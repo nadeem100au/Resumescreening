@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import intervueLogo from "figma:asset/b2c9e0cc6e570a4eef3f72abb44e3b9aa3b91360.png";
+
 
 export function Header({ title, theme = "dark" }: { title: string; theme?: "dark" | "light" }) {
   const isLight = theme === "light";
@@ -8,10 +8,10 @@ export function Header({ title, theme = "dark" }: { title: string; theme?: "dark
     <header className="flex items-center justify-between w-full px-12 py-6 shrink-0">
       {/* Intervue Logo */}
       <img
-        src={intervueLogo}
+        src="/black_logo.svg"
         alt="Intervue"
         className="h-6 w-auto object-contain"
-        style={isLight ? { filter: 'invert(1)' } : undefined}
+        style={{ filter: !isLight ? 'brightness(0) invert(1)' : 'brightness(0)' }}
       />
 
       {/* Slide Title */}

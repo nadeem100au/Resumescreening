@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback, ReactNode } from "react";
 import svgPaths from "../../imports/svg-s788cbew26";
 import imgAvatar from "figma:asset/cdac98998c90f96526373b774ef80741763f4a50.png";
 
-export interface EmersonSlideProps {
+export interface EnterpriseSlideProps {
   headerText: string;
   title: ReactNode;
   description: ReactNode;
@@ -19,7 +19,7 @@ export interface EmersonSlideProps {
   unmatchedRequirements: { text: ReactNode }[];
 }
 
-export function EmersonSlideTemplate({
+export function EnterpriseSlideTemplate({
   headerText,
   title,
   description,
@@ -32,7 +32,7 @@ export function EmersonSlideTemplate({
   matchedRequirements,
   unmatchedTitle,
   unmatchedRequirements,
-}: EmersonSlideProps) {
+}: EnterpriseSlideProps) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -104,7 +104,7 @@ export function EmersonSlideTemplate({
       transition={{ duration: 0.5 }}
       className="flex flex-col h-full w-full bg-white text-gray-900"
     >
-      <Header title="EMERSON CASE STUDY" theme="light" />
+      <Header title="CASE STUDY" theme="light" />
 
       <main className="flex-1 px-12 pb-8 flex flex-col justify-center overflow-hidden">
         <motion.div

@@ -10,7 +10,7 @@ export function SlideFour() {
       exit={{ opacity: 0 }}
       className="flex flex-col h-full w-full bg-white text-gray-900"
     >
-      <Header title="EMERSON CASE STUDY" theme="light" />
+      <Header title="CASE STUDY" theme="light" />
 
       <main className="flex-1 flex flex-col justify-center px-16 max-w-7xl mx-auto w-full">
         <div className="flex flex-col items-center mb-16 text-center">
@@ -19,7 +19,7 @@ export function SlideFour() {
             Context-Aware <span className="italic text-[#6D42D0]">Intelligence</span>
           </h2>
           <p className="text-xl text-gray-500 font-light max-w-2xl">
-            Automatically maps abbreviations and synonyms. Recognizing BCom as Commerce, and HUL as Hindustan Unilever.
+            Automatically maps abbreviations and synonyms. Recognizing B.Tech as Bachelor of Technology, and AWS as Amazon Web Services.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export function SlideFour() {
 
           {[
             { from: "HUL", to: "Hindustan Unilever", context: "Tier 1 FMCG" },
-            { from: "BCom", to: "Bachelor of Commerce", context: "Business Degree" },
+            { from: "B.Tech", to: "Bachelor of Technology", context: "Engineering Degree" },
             { from: "Big 4", to: "PwC, EY, Deloitte, KPMG", context: "Premium Experience" }
           ].map((mapping, i) => (
             <motion.div
