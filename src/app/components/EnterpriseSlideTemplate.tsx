@@ -2,7 +2,9 @@ import { motion, AnimatePresence } from "motion/react";
 import { Header } from "./Header";
 import { useState, useEffect, useRef, useCallback, ReactNode } from "react";
 import svgPaths from "../../imports/svg-s788cbew26";
-import imgAvatar from "figma:asset/cdac98998c90f96526373b774ef80741763f4a50.png";
+
+// Natalie avatar is in public directory
+const imgAvatar = "/natalie_avatar.svg";
 
 export interface EnterpriseSlideProps {
   headerText: string;
@@ -43,7 +45,7 @@ export function EnterpriseSlideTemplate({
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
   };
 
   const [showProfile, setShowProfile] = useState(false);
@@ -176,7 +178,7 @@ export function EnterpriseSlideTemplate({
               <div className="absolute top-3 right-3 z-20">
                 <div className="flex items-center justify-center size-[36px] rounded-lg">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M13 1L1 13M1 1L13 13" stroke="#A4A7AE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M13 1 L1 13 M1 1 L13 13" stroke="#A4A7AE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
               </div>
