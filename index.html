@@ -107,6 +107,16 @@
         input::placeholder {
             color: #4b5563 !important;
         }
+
+        /* Mic pulse animation */
+        @keyframes mic-pulse {
+            0% { transform: scale(1); opacity: 0.05; }
+            50% { transform: scale(1.5); opacity: 0.15; }
+            100% { transform: scale(1); opacity: 0.05; }
+        }
+        .mic-ring {
+            animation: mic-pulse 4s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="selection:bg-purple-500/30 overflow-x-hidden">
@@ -395,6 +405,67 @@
                         <span class="text-[#6D42D0]/40">⚡</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONVERSATIONAL HR SCREENING (DARK) -->
+    <section class="py-32 px-6 bg-[#111116] border-t border-white/5 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#110524] to-[#05010F] opacity-100"></div>
+        
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20 relative z-10">
+            <!-- Left: Visual -->
+            <div class="w-full md:w-1/2 reveal">
+                <div class="aspect-square rounded-[3rem] bg-[#111116] border border-white/5 flex flex-col items-center justify-center relative overflow-hidden backdrop-blur-md shadow-2xl">
+                    <!-- Background Glow -->
+                    <div class="absolute w-full h-full bg-purple-600/5 blur-3xl rounded-full"></div>
+                    
+                    <!-- Pulsing Mic -->
+                    <div class="relative z-10 w-32 h-32 rounded-full bg-[#111116] border border-white/10 flex items-center justify-center shadow-[0_0_100px_rgba(139,97,246,0.1)]">
+                        <div class="mic-ring absolute w-40 h-40 rounded-full border border-white/20"></div>
+                        <div class="mic-ring absolute w-48 h-48 rounded-full border border-white/10" style="animation-delay: 1s;"></div>
+                        <div class="mic-ring absolute w-56 h-56 rounded-full border border-white/5" style="animation-delay: 2s;"></div>
+                        
+                        <svg class="w-12 h-12 text-[#6D42D0]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                        </svg>
+                    </div>
+
+                    <div class="mt-12 text-center relative z-10">
+                        <p class="text-gray-500 uppercase tracking-[0.2em] text-[10px] font-bold mb-4">HR Screening Agent</p>
+                        <p class="text-white text-2xl font-serif font-light px-8 leading-relaxed">"Walk me through your experience..."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="w-full md:w-1/2 space-y-8 reveal" style="transition-delay: 0.2s;">
+                <div>
+                    <p class="text-[#6D42D0] font-bold tracking-[0.2em] text-sm uppercase mb-4">Voice-Powered HR Screening</p>
+                    <h2 class="text-[3.5rem] md:text-[4.5rem] font-medium leading-[1.1] text-white">
+                        Conversational <br/>
+                        <span class="font-serif italic text-gray-400 font-light">HR Screening</span>
+                    </h2>
+                </div>
+
+                <p class="text-xl text-gray-400 font-light leading-relaxed">
+                    AI voice agents conduct structured HR screening calls, assessing communication, domain expertise, and cultural fit — all without human intervention.
+                </p>
+
+                <ul class="space-y-6 pt-4">
+                    <li class="flex items-center gap-4 text-gray-300 font-light border-b border-white/5 pb-5 last:border-0">
+                        <div class="w-2 h-2 rounded-full bg-[#8B61F6] shrink-0 shadow-[0_0_8px_#8B61F6]"></div>
+                        Every candidate receives the same HR screening experience
+                    </li>
+                    <li class="flex items-center gap-4 text-gray-300 font-light border-b border-white/5 pb-5 last:border-0">
+                        <div class="w-2 h-2 rounded-full bg-[#8B61F6] shrink-0 shadow-[0_0_8px_#8B61F6]"></div>
+                        Zero interviewer fatigue or scheduling conflicts
+                    </li>
+                    <li class="flex items-center gap-4 text-gray-300 font-light border-b border-white/5 pb-5 last:border-0">
+                        <div class="w-2 h-2 rounded-full bg-[#8B61F6] shrink-0 shadow-[0_0_8px_#8B61F6]"></div>
+                        Structured HR feedback reports generated instantly
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
