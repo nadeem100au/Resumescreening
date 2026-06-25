@@ -3,6 +3,7 @@ import { ArrowRight, Bot, Clock, ShieldCheck, Users, Zap, Briefcase, FileSearch,
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
+import { HeroInteractive } from "./components/HeroInteractive";
 
 /* ─── Animated JD Q&A Interview Widget ─── */
 // Phase sequence:
@@ -444,89 +445,14 @@ export function LandingPage() {
             </motion.div>
           </motion.div>
 
-          {/* RIGHT: Glassmorphic form card — SlideThree card style */}
+          {/* RIGHT: Interactive candidate screening demo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, x: 30 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-5 bg-[#1A1033] border border-[#3B2875] rounded-3xl p-8 shadow-2xl relative overflow-hidden"
+            className="lg:col-span-5"
           >
-            {/* Inner glow — matches SlideThree */}
-            <div className="absolute top-[-50%] right-[-50%] w-[100%] h-[100%] bg-gradient-to-br from-[#8B61F6]/20 to-transparent rounded-full blur-3xl pointer-events-none" />
-
-            <div className="relative z-10 space-y-6">
-              <div>
-                <p className="text-[#8B61F6] text-xs font-bold tracking-[0.2em] uppercase mb-2">Get Early Access</p>
-                <h2 className="text-2xl font-medium text-white leading-snug">
-                  See the platform <span className="font-serif italic font-light text-gray-300">in action</span>
-                </h2>
-                <p className="text-gray-400 text-sm mt-2 font-light">
-                  Schedule a live demo with our team and transform your hiring within weeks.
-                </p>
-              </div>
-
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="space-y-1.5">
-                    <label className="text-xs text-gray-500 font-medium uppercase tracking-wider">First Name</label>
-                    <input
-                      type="text"
-                      placeholder="Priya"
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-gray-600 focus:outline-none focus:border-[#8B61F6]/60 focus:bg-white/10 transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1.5">
-                    <label className="text-xs text-gray-500 font-medium uppercase tracking-wider">Last Name</label>
-                    <input
-                      type="text"
-                      placeholder="Sharma"
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-gray-600 focus:outline-none focus:border-[#8B61F6]/60 focus:bg-white/10 transition-all"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs text-gray-500 font-medium uppercase tracking-wider">Work Email</label>
-                  <input
-                    type="email"
-                    placeholder="priya@company.com"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-gray-600 focus:outline-none focus:border-[#8B61F6]/60 focus:bg-white/10 transition-all"
-                  />
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs text-gray-500 font-medium uppercase tracking-wider">Company</label>
-                  <input
-                    type="text"
-                    placeholder="Acme Corp"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-gray-600 focus:outline-none focus:border-[#8B61F6]/60 focus:bg-white/10 transition-all"
-                  />
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs text-gray-500 font-medium uppercase tracking-wider">Monthly Hiring Volume</label>
-                  <select className="w-full bg-[#111116] border border-white/10 rounded-xl px-4 py-3 text-gray-300 text-sm focus:outline-none focus:border-[#8B61F6]/60 transition-all appearance-none cursor-pointer">
-                    <option value="">Select range...</option>
-                    <option>1–500 applicants/month</option>
-                    <option>500–5,000 applicants/month</option>
-                    <option>5,000–20,000 applicants/month</option>
-                    <option>20,000+ applicants/month</option>
-                  </select>
-                </div>
-
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  type="submit"
-                  className="w-full bg-[#8B61F6] hover:bg-[#6D42D0] text-white py-4 rounded-xl font-semibold text-sm tracking-wide transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(139,97,246,0.4)]"
-                >
-                  Request a Demo
-                  <ArrowRight className="w-4 h-4" />
-                </motion.button>
-              </form>
-
-              <p className="text-xs text-gray-600 text-center font-light">No spam. Cancel anytime. Trusted by enterprise HR teams.</p>
-            </div>
+            <HeroInteractive />
           </motion.div>
         </div>
       </div>
